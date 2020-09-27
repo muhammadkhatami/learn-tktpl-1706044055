@@ -1,7 +1,6 @@
-package id.ac.ui.cs.mobileprogramming.helloworld
+package id.ac.ui.cs.mobileprogramming.muhammadkhatami.helloworld
 
 import org.junit.Test
-
 import org.junit.Assert.*
 
 /**
@@ -9,9 +8,10 @@ import org.junit.Assert.*
  *
  * See [testing documentation](http://d.android.com/tools/testing).
  */
-class ExampleUnitTest {
+class HelloWorldUnitTest {
     @Test
-    fun addition_isCorrect() {
-        assertEquals(4, 2 + 2)
+    fun themeIsChanged() {
+        val activity = MainActivity()
+        assertEquals(activity.themeChanged(), "theme changed")
     }
 }
