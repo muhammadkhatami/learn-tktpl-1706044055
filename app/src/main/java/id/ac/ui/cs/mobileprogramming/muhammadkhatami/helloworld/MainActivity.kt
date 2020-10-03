@@ -1,4 +1,4 @@
-package id.ac.ui.cs.mobileprogramming.helloworld
+package id.ac.ui.cs.mobileprogramming.muhammadkhatami.helloworld
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
