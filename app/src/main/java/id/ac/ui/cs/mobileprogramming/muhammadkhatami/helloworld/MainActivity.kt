@@ -109,7 +109,6 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun sendRequest(wifiResultList: String) {
-
         val url = URL("https://2932cff3781bc1049345f803efb4774b.m.pipedream.net")
         val con = url.openConnection() as HttpURLConnection
         con.requestMethod = "POST"
