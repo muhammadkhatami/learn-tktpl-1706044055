@@ -10,43 +10,45 @@
     android:id="@+id/mainLayout">
 
     <TextView
-        android:id="@+id/mainText"
+        android:id="@+id/text_result"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
+        android:text=""
         android:textColor="@color/colorOrange"
         android:textSize="45dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.374" />
+        app:layout_constraintVertical_bias="0.244" />
 
-    <TextView
-        android:id="@+id/secondText"
-        android:layout_width="wrap_content"
+    <EditText
+        android:id="@+id/input_number"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="app by Muhammad Khatami"
+        android:gravity="center"
+        android:hint="masukan angka"
+        android:inputType="number"
         android:textColor="@color/colorSilver"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/mainText"
-        app:layout_constraintVertical_bias="0.151" />
+        app:layout_constraintTop_toTopOf="@+id/text_result"
+        app:layout_constraintVertical_bias="0.3" />
 
     <Button
-        android:id="@+id/clickMe"
+        android:id="@+id/submit_number"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Change Theme"
-        android:textColor="@color/colorDarkBlue"
         android:background="@color/colorSilver"
         android:paddingLeft="20dp"
         android:paddingRight="20dp"
+        android:text="submit"
+        android:textColor="@color/colorDarkBlue"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/secondText"/>
+        app:layout_constraintTop_toTopOf="@+id/input_number"
+        app:layout_constraintVertical_bias="0.214" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
